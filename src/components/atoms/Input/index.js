@@ -1,25 +1,25 @@
-<<<<<<< HEAD
-import React from 'react';
-import {StyleSheet, TextInput, View, Text} from 'react-native';
-import {IcEmail} from '../../../assets';
-import AnimatedInput from 'react-native-animated-input';
+// <<<<<<< HEAD
+// import React from 'react';
+// import {StyleSheet, TextInput, View, Text} from 'react-native';
+// import {IcEmail} from '../../../assets';
+// import AnimatedInput from 'react-native-animated-input';
 
-const Input = ({placeholder, onChangeText, value, secureTextEntry, error}) => {
-  return (
-    <View>
-      <View className="flex-row items-center bg-white shadow-2xl rounded-3xl px-4 mt-2">
-        <IcEmail />
-        <TextInput
-          className="px-4 text-[16px]"
-          style={[error && styles.errorInput]}
-          placeholder={placeholder}
-          placeholderTextColor="#aaa"
-          onChangeText={onChangeText}
-          value={value}
-          secureTextEntry={secureTextEntry}
-        />
-      </View>
-=======
+// const Input = ({placeholder, onChangeText, value, secureTextEntry, error}) => {
+//   return (
+//     <View>
+//       <View className="flex-row items-center bg-white shadow-2xl rounded-3xl px-4 mt-2">
+//         <IcEmail />
+//         <TextInput
+//           className="px-4 text-[16px]"
+//           style={[error && styles.errorInput]}
+//           placeholder={placeholder}
+//           placeholderTextColor="#aaa"
+//           onChangeText={onChangeText}
+//           value={value}
+//           secureTextEntry={secureTextEntry}
+//         />
+//       </View>
+
 import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 import React from 'react';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
@@ -79,20 +79,20 @@ const Input = ({ label, icon, placeholder, bg, secureTextEntry, error, password,
           {error}
         </Text>
       )}
->>>>>>> ghifari-dev
+
     </View>
   );
 };
 
-<<<<<<< HEAD
-const styles = StyleSheet.create({
-  errorInput: {
-    borderColor: '#3E86FA',
-  },
-});
+// <<<<<<< HEAD
+// const styles = StyleSheet.create({
+//   errorInput: {
+//     borderColor: '#3E86FA',
+//   },
+// });
 
-export default Input;
-=======
+// export default Input;
+// =======
 export default Input;
 
 const styles = StyleSheet.create({
@@ -115,4 +115,4 @@ const styles = StyleSheet.create({
     fontSize: 16
   }
 });
->>>>>>> ghifari-dev
+

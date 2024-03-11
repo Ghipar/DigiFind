@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, {useState, useRef, useEffect} from 'react';
 import {View, Dimensions, FlatList, Animated, StyleSheet} from 'react-native';
 import {DigiFind} from '../../assets';
@@ -108,39 +108,13 @@ const GetStarted = ({navigation}) => {
             <Gap height={15} />
           </View>
         </View>
-=======
-import {Text, View} from 'react-native';
-import React from 'react';
-import {ILlogo} from '../../assets';
-import {Button, Gap} from '../../components';
 
-const GetStarted = ({navigation}) => {
-  return (
-    <View className="p-8 space-y-2 flex-1 flex justify-between bg-pink-500">
-      <View className>
-        <ILlogo />
-        <Text className="text-lg mt-20 text-white">
-          Mari bergabung bersama kami!
-        </Text>
-      </View>
-      <View>
-        <Button
-          title="Get Started"
-          onPress={() => navigation.navigate('Register')}
-        />
-        <Gap height={16} />
-        <Button
-          type="secondary"
-          title="Sign In"
-          onPress={() => navigation.navigate('Login')}
-        />
->>>>>>> ghifari-dev
       </View>
     </View>
   );
 };
 
-<<<<<<< HEAD
+
 const styles = StyleSheet.create({
   pagination: {
     flexDirection: 'row',
@@ -155,6 +129,5 @@ const styles = StyleSheet.create({
   },
 });
 
-=======
->>>>>>> ghifari-dev
+
 export default GetStarted;

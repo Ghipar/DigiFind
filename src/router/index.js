@@ -1,83 +1,84 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-<<<<<<< HEAD
+import { createStackNavigator } from '@react-navigation/stack';
+
 import {
   Splash,
   GetStarted,
   Register,
   Login,
   Home,
-  CallAPI,
   Profil,
   NewPassword,
+  Otp,
+  Fpass,
+  Scan
 } from '../pages';
-=======
-import {Splash, GetStarted, Register, Login, Home, CallAPI, Otp, Fpass, Scan} from '../pages';
->>>>>>> ghifari-dev
+
+
 
 const Stack = createStackNavigator();
 
 const Router = () => {
   return (
     <Stack.Navigator initialRouteName="Splash">
-<<<<<<< HEAD
-      {/* // <Stack.Navigator> */}
-=======
->>>>>>> ghifari-dev
+
+
       <Stack.Screen
         name="Splash"
         component={Splash}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="GetStarted"
         component={GetStarted}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Register"
         component={Register}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Login"
         component={Login}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Home"
         component={Home}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="CallAPI"
         component={CallAPI}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
-<<<<<<< HEAD
+
         name="Profil"
         component={Profil}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="NewPassword"
         component={NewPassword}
-=======
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
         name="Otp"
         component={Otp}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Fpass"
         component={Fpass}
-        options={{headerShown: false}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Scan"
         component={Scan}
->>>>>>> ghifari-dev
-        options={{headerShown: false}}
+
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );

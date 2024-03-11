@@ -1,53 +1,4 @@
-<<<<<<< HEAD
-import {StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
-import {ILlogo} from '../../assets';
-import {Input, Link, Button, Gap, Password} from '../../components';
 
-const Register = ({navigation}) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-
-  return (
-    <View className="p-8 flex-1 justify-between">
-      <View>
-        <View className="items-center">
-          <ILlogo />
-          <Text className="text-3xl text-black font-bold mt-12">Daftar</Text>
-        </View>
-        <Gap height={24} />
-        <Input
-          label="Masukkan Email"
-          placeholder="Email"
-          value={email}
-          onChangeText={setEmail}
-        />
-        <Gap height={16} />
-        <Password
-          label="Masukkan Password"
-          placeholder="Password"
-          secureTextEntry={true}
-          value={password}
-          onChangeText={setPassword}
-        />
-        <Gap height={16} />
-        <Password
-          label="Masukkan kembali Password"
-          placeholder="Password"
-          secureTextEntry={true}
-          value={confirmPassword}
-          onChangeText={setConfirmPassword}
-        />
-        <Text className="text-black font-semibold mt-2">Sudah punya akun?</Text>
-        <Gap height={8} />
-        <Link title="Masuk" />
-      </View>
-      <View className="mb-10">
-        <Button title="Sign In" onPress={() => navigation.navigate('Login')} />
-      </View>
-    </View>
-=======
 import { Keyboard, StyleSheet, Text, View } from 'react-native';
 import React, { useContext, useState } from 'react';
 import { Input, Link, Button, Gap, Password } from '../../components';
@@ -142,7 +93,7 @@ const Register = ({ navigation }) => {
 
     <ScrollView className="bg-[#FDFDFD] flex-1">
       <View className="p-8 flex-1 items-center h-screen justify-between">
-          <Text style={{ fontFamily: 'Telkomsel Batik Sans Bold', fontSize: 36, color: '#3E86FA', }}>Daftar</Text>
+        <Text style={{ fontFamily: 'Telkomsel Batik Sans Bold', fontSize: 36, color: '#3E86FA', }}>Daftar</Text>
         <View >
           <Spinner visible={isLoading} />
           <Input
@@ -156,7 +107,7 @@ const Register = ({ navigation }) => {
             value={NIK}
             error={errors.NIK}
             onFocus={() => {
-              
+
               handleError(null, 'NIK');
             }}
           />
@@ -244,15 +195,15 @@ const Register = ({ navigation }) => {
             password
           />
         </View>
-            
+
         <View >
           <Button type={"main"} title="Daftar" onPress={() => {
-            if (!NIK || !fullname ||  !gender || !address || !email || !phone || !password || !confirmPassword || !isValid) {
+            if (!NIK || !fullname || !gender || !address || !email || !phone || !password || !confirmPassword || !isValid) {
               validate();
             } else {
               console.log(NIK, '\n', fullname, '\n', gender, '\n', address, '\n', email, '\n', phone, '\n', password, '\n', confirmPassword);
               // console.log(NIK, '\n', fullname, '\n', gender, '\n', address, '\n', email, '\n', phone, '\n', password, '\n', confirmPassword);
-              register(NIK, fullname,  gender, address,  email, password,  phone );
+              register(NIK, fullname, gender, address, email, password, phone);
             }
             // register(NIK, fullname, email, password, phone);
           }} />
@@ -268,7 +219,6 @@ const Register = ({ navigation }) => {
 
       </View>
     </ScrollView>
->>>>>>> ghifari-dev
   );
 };
 
