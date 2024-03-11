@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "497313868348",
+    "project_id": "digifind-app",
+    "storage_bucket": "digifind-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497313868348:android:027bacb479d5632b58b139",
+        "android_client_info": {
+          "package_name": "com.digifindapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497313868348-3cbe2tutlgiogra89nti17h5dal3jk07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digifindapplication",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "497313868348-lto8bkjo34tekuipbugltj444ohaj2dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR-k0l0BQn-jI94EF5aYYaChPx9aH5COE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497313868348-lto8bkjo34tekuipbugltj444ohaj2dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
