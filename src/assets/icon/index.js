@@ -11,6 +11,7 @@ import IcPass from './ic_Password.svg';
 import IcCheckpass from './ic_Chekpass.svg'; 
 import IcEye from './ic_Eye.svg'; 
 import IcEyeClosed from './ic_EyeClosed.svg'; 
+import IcGoogle from './ic_Google.svg'; 
 
 export {
     IcNIK, 

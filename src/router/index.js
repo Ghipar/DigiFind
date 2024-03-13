@@ -48,11 +48,7 @@ const Router = () => {
         component={Home}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
-        name="CallAPI"
-        component={CallAPI}
-        options={{ headerShown: false }}
-      />
+     
       <Stack.Screen
 
         name="Profil"

@@ -36,7 +36,7 @@ const Otp = ({ navigation }) => {
     return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   };
   return (
-    <View className="p-10 flex-1 justify-center">
+    <View className="p-10 flex-1 justify-center bg-[#FDFDFD]">
       <Gap height={100} />
       <View className="items-center">
         <Text style={styles.header}>Masukkan Kode OTP</Text>
@@ -64,7 +64,8 @@ const Otp = ({ navigation }) => {
       <Button type={'main'} onPress={ async () => {
         const getOtp = await AsyncStorage.getItem('otp');
         console.log(getOtp);
-        otp === getOtp? navigation.navigate('Scan'):console.log('OTP SALAHH!!!');
+        otp === getOtp? navigation.navigate('NewPassword'):console.log('OTP SALAHH!!!');
+        // navigation.navigate('NewPassword')
         }} title={'Kirim'} />
     </View>
   )

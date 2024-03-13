@@ -75,7 +75,7 @@ export const AuthProvider = ({ children }) => {
                 // console.log(getToken);
                 setIsLoading(false);
                 // console.log('Registrasi berhasil:', userInfo);
-                await profile();
+                // await profile();
             } else {
                 // Menangani status respons selain 200
                 console.log('Ada masalah dalam registrasi, status respons:', response.status);
@@ -103,12 +103,12 @@ export const AuthProvider = ({ children }) => {
     }
     const profile = async () => {
         setIsLoading(true);
-
-        console.log(tokenblic);
+        const getOtp = await AsyncStorage.getItem('otp');
+        const tkn = `Bearer ${getOtp}`
         try {
             const response = await axios.get(`${BASE_URL}/api/profile`, {
                 headers: {
-                    'Authorization': tokenblic,
+                    'Authorization': tkn,
                     'ngrok-skip-browser-warning': true
                 }
             }).then(response => {

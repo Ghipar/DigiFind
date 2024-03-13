@@ -17,7 +17,6 @@ export {
   Register,
   Login,
   Home,
-  CallAPI,
   Profil,
   NewPassword,
   Template,

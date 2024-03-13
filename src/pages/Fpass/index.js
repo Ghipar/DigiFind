@@ -64,6 +64,7 @@ const Fpass = ({ navigation }) => {
                         sendOTP(email);
                         navigation.navigate('Otp')
                     }
+                    // navigation.navigate('Otp')
                 }} title={'Kirim'} />
             </View>
         </View>

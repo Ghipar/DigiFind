@@ -51,7 +51,7 @@ const Input = ({ label, icon, placeholder, bg, secureTextEntry, error, password,
   return (
     // <View   className="border-2 rounded-md border-gray-300 border-current px-4" >
     <View>
-      <View style={styles.container} >
+      <View className="flex-row items-center bg-white shadow-sm rounded-3xl px-4 mt-2" style={styles.container} >
         <Text className="text-base mb-1 font-semibold text-black">{label}</Text>
         <Icon />
         <TextInput
@@ -99,10 +99,7 @@ const styles = StyleSheet.create({
   container: {
     height: 56,
     width: 330,
-    borderWidth: 0.6,
     backgroundColor: '#FFFFFF',
-    borderColor: '#D9D6D6',
-    borderRadius: 50,
     flexDirection: 'row',
     paddingHorizontal: 15,
     alignItems: 'center',

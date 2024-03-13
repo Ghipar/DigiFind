@@ -212,7 +212,7 @@ const Register = ({ navigation }) => {
             <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#3E86FA' }}>Sudah memiliki akun?</Text>
             <Gap width={5} />
             <Link color={'#3E86FA'} title="Login" onPress={() => {
-              navigation.navigate('Scan');
+              navigation.navigate('Login');
             }} />
           </View>
         </View>

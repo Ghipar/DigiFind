@@ -19,6 +19,10 @@ module.exports = {
         bluestandart: '#3e86fa',
         //##0454D6
       },
+      fontFamily: {
+        customFont: ['"telkomsel"', "Telkomsel Batik Sans Bold"],
+        // Add more custom font families as needed
+      },
     },
   },
   plugins: [],
