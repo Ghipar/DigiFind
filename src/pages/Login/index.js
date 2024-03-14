@@ -1,4 +1,3 @@
-
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {Input, Link, Button, Gap, Password} from '../../components';
@@ -8,7 +7,6 @@ import {Template} from '..';
 import {IcGoogle} from '../../assets';
 import {
   GoogleSignin,
-  GoogleSigninButton,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
 
@@ -112,9 +110,9 @@ const Login = ({navigation}) => {
   }, []);
 
   return (
-    <Template title="Masuk">
+    <Template title="Masuki">
       <ScrollView>
-        <View className="m-8 mb-[100px]">
+        <View className="m-8 mb-[94px]">
           <View>
             <View className="items-center mt-2">
               <Image
@@ -124,16 +122,16 @@ const Login = ({navigation}) => {
             </View>
             <View>
               <Input
-                placeholder="e-mail"
+                placeholder="Email"
                 onChangeText={text => handleEmail(text)}
                 value={email}
-                error={!emailValid}
+                error={!emailValid ? 'Format email tidak valid' : ''}
               />
-              {!emailValid && (
+              {/* {!emailValid && (
                 <Text className="text-[14px] text-red-600">
                   Format email tidak valid
                 </Text>
-              )}
+              )} */}
               <Password
                 placeholder="Kata Sandi"
                 value={password}
@@ -141,7 +139,7 @@ const Login = ({navigation}) => {
                 error={passwordError}
                 showIcon={showIcon}
               />
-              <Gap height={12} />
+              <Gap height={10} />
               <View className="flex-row justify-between items-center">
                 <View className="flex flex-row items-center">
                   {/* <CheckBox
@@ -153,18 +151,20 @@ const Login = ({navigation}) => {
                   />
                   <Text>Remember me</Text> */}
                 </View>
+
                 <Link
                   title="Lupa Kata Sandi"
                   style={{fontWeight: '500'}}
                   onPress={() => navigation.navigate('NewPassword')}
                 />
               </View>
-              <Gap height={12} />
+              <Gap height={10} />
             </View>
             <Button
               title="Masuk"
               onPress={handleButton}
               disabled={isButtonDisabled}
+              type="main"
             />
             <Gap height={16} />
             <TouchableOpacity onPress={handleGoogleSignIn}>
@@ -310,7 +310,6 @@ const styles = StyleSheet.create({
 //     </View>
 //   );
 // };
-
 
 // export default Login;
 

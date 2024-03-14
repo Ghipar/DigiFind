@@ -1,7 +1,6 @@
-
 import {StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
-import {ILlogo} from '../../assets';
+import {ILlogo3} from '../../assets';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
@@ -11,9 +10,7 @@ const Splash = ({navigation}) => {
   }, []);
   return (
     <View className="flex-1 justify-center items-center">
-      <ILlogo />
-
-
+      <ILlogo3 />
     </View>
   );
 };

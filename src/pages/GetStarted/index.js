@@ -1,4 +1,3 @@
-
 import React, {useState, useRef, useEffect} from 'react';
 import {View, Dimensions, FlatList, Animated, StyleSheet} from 'react-native';
 import {DigiFind} from '../../assets';
@@ -101,19 +100,17 @@ const GetStarted = ({navigation}) => {
             />
             <Gap height={10} />
             <Button
-              type=""
+              type="secondary"
               title="Daftar"
               onPress={() => navigation.navigate('Register')}
             />
             <Gap height={15} />
           </View>
         </View>
-
       </View>
     </View>
   );
 };
-
 
 const styles = StyleSheet.create({
   pagination: {
@@ -128,6 +125,5 @@ const styles = StyleSheet.create({
     marginHorizontal: 4,
   },
 });
-
 
 export default GetStarted;

@@ -17,7 +17,11 @@ module.exports = {
         silver: '#ecebff',
         'bubble-gum': '#ff77e9',
         bluestandart: '#3e86fa',
-        //##0454D6
+        blueold: '#0454D6',
+      },
+      fontFamily: {
+        customTsel: ['Telkomsel Batik Sans Bold'],
+        poppins: ['Poppins'],
       },
     },
   },

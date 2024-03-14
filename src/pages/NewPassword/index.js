@@ -76,6 +76,7 @@ const NewPassword = ({navigation}) => {
           />
           <Gap height={22} />
           <Button
+            type="main"
             title="Perbarui"
             onPress={handleButton}
             disabled={isButtonDisabled}

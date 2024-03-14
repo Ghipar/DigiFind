@@ -18,35 +18,31 @@
 //         <Text
 //           style={[styles.text, type === 'secondary' && styles.secondaryText]}>
 
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
-
-const Button = ({ type, title, onPress }) => {
+const Button = ({type, title, onPress}) => {
   return (
-
-    <TouchableOpacity onPress={onPress} >
+    <TouchableOpacity onPress={onPress}>
       <LinearGradient
-        className="py-2 rounded-full"
+        className="py-2 rounded-full "
         style={styles.container}
-
-        colors={type === "main" ? ['#3E86FA', '#0454D6'] : ['#FFFFFF', '#FFFFFF']}
-      >
-        <Text className="text-center" style={styles.text}>
-
+        colors={
+          type === 'main' ? ['#3E86FA', '#0454D6'] : ['#FFFFFF', '#FFFFFF']
+        }>
+        <Text
+          style={[styles.text, type === 'secondary' && styles.secondaryText]}>
           {title}
         </Text>
       </LinearGradient>
     </TouchableOpacity>
-
   );
 };
 
 export default Button;
 
 const styles = StyleSheet.create({
-
   // secondaryContainer: {
   //   backgroundColor: 'white',
   //   borderWidth: 1,
@@ -58,20 +54,24 @@ const styles = StyleSheet.create({
   //   fontSize: 20,
   //   fontWeight: 600,
   // },
-  // secondaryText: {
-  //   color: '#3E86FA',
-  // },
+  secondaryText: {
+    color: '#3E86FA',
+  },
 
   container: {
     alignItems: 'center',
     justifyContent: 'center',
     height: 55,
-    width: 330
+    width: 330,
+    borderRadius: 30,
+    overflow: 'hidden',
+    borderWidth: 1.5,
+    borderColor: '#3E86FA', // Set border color for both main and secondary buttons
   },
   text: {
     color: 'white',
     fontSize: 24,
-    fontFamily: 'Telkomsel Batik Sans Bold'
-  }
-
+    textAlign: 'center',
+    fontFamily: 'Telkomsel Batik Sans Bold',
+  },
 });
