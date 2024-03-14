@@ -1,4 +1,6 @@
 import ILlogo from './logo.svg';
+import ILlogo2 from './ILlogo2.svg';
+import ILlogo3 from './ILlogo3.svg';
 import ILPhoto from './userPhoto.svg';
 import DigiFind from './digiFind.svg';
 
@@ -24,4 +26,6 @@ export {
   ILlogin,
   ILnewPassword,
   ILalert,
+  ILlogo2,
+  ILlogo3,
 };

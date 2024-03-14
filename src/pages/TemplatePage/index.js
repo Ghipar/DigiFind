@@ -7,8 +7,7 @@ const Template = ({title, children}) => {
   return (
     <SafeAreaView className="bg-whitebg flex-1">
       <View className="items-center mt-[72px]">
-      <Text style={{ fontFamily: 'Telkomsel Batik Sans Bold', fontSize: 36, color: '#3E86FA', }}>{title}</Text>
-        
+        <Text className="text-[24px] font-bold text-bluestandart">{title}</Text>
       </View>
       {children}
     </SafeAreaView>

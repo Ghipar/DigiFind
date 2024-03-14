@@ -1,10 +1,10 @@
-import { StyleSheet, Alert, View, Image } from 'react-native';
-import React, { useState, useEffect, useContext } from 'react';
-import { Button, Gap, Input, Password, PopUp } from '../../components';
-import { Template } from '..';
-import { AuthContext } from '../../components/context/AuthContext';
+import {StyleSheet, Alert, View, Image} from 'react-native';
+import React, {useState, useEffect, useContext} from 'react';
+import {Button, Gap, Input, Password, PopUp} from '../../components';
+import {Template} from '..';
+import {AuthContext} from '../../components/context/AuthContext';
 
-const NewPassword = ({ navigation }) => {
+const NewPassword = ({navigation}) => {
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
   // const [confirmPassword, setConfirmPassword] = useState('');
@@ -13,7 +13,7 @@ const NewPassword = ({ navigation }) => {
   const [showIcon, setShowIcon] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [errors, setErrors] = React.useState({});
-  const { ressPass } = useContext(AuthContext);
+  const {ressPass} = useContext(AuthContext);
 
   // const isButtonDisabled =
   //   !password || !confirmPassword || !!passwordError || !!confirmPasswordError;
@@ -22,21 +22,19 @@ const NewPassword = ({ navigation }) => {
     switch (input) {
       case 'password':
         if (text.length < 6) {
-          handleError('Password harus memiliki setidaknya 6 karakter', 'password');
-
-
+          handleError(
+            'Password harus memiliki setidaknya 6 karakter',
+            'password',
+          );
         } else {
           handleError(null, 'password');
-
         }
         break;
       case 'confirmPassword':
         if (text !== password) {
           handleError('Konfirmasi password tidak cocok', 'confirmPassword');
-
         } else {
           handleError(null, 'confirmPassword');
-
         }
         break;
       default:
@@ -44,8 +42,8 @@ const NewPassword = ({ navigation }) => {
     }
   };
   const handleError = (errorMessage, input) => {
-    setErrors((prevState) => ({ ...prevState, [input]: errorMessage }))
-  }
+    setErrors(prevState => ({...prevState, [input]: errorMessage}));
+  };
   //cek syarat password sesuai atau tidak
   // const handlePasswordChange = (text, isValid) => {
   //   setPassword(text);
@@ -79,7 +77,7 @@ const NewPassword = ({ navigation }) => {
     //     navigation.replace('Login');
     //   }, 1200);
     // }
-    console.log(password, confirmPassword)
+    console.log(password, confirmPassword);
   };
 
   return (
@@ -110,14 +108,13 @@ const NewPassword = ({ navigation }) => {
           <Input
             placeholder="Password"
             secureTextEntry={true}
-            onChangeText={(text) => {
-              handleOnChange(text, "password"),
-                setPassword(text);
+            onChangeText={text => {
+              handleOnChange(text, 'password'), setPassword(text);
             }}
             value={password}
             error={errors.password}
             onFocus={() => {
-              handleError(null, "password");
+              handleError(null, 'password');
             }}
             password={true}
           />
@@ -125,20 +122,19 @@ const NewPassword = ({ navigation }) => {
           <Input
             placeholder="Konfirmasi Password"
             secureTextEntry={true}
-            onChangeText={(text) => {
-              handleOnChange(text, "confirmPassword"),
-                setConPassword(text);
+            onChangeText={text => {
+              handleOnChange(text, 'confirmPassword'), setConPassword(text);
             }}
             error={errors.confirmPassword}
             value={confirmPassword}
             onFocus={() => {
-              handleError(null, "confirmPassword");
+              handleError(null, 'confirmPassword');
             }}
             password
           />
           <Gap height={22} />
           <Button
-          type={'main'}
+            type="main"
             title="Perbarui"
             onPress={handleButton}
             // disabled={isButtonDisabled}
