@@ -23,10 +23,6 @@ module.exports = {
         customTsel: ['Telkomsel Batik Sans Bold'],
         poppins: ['Poppins'],
       },
-      fontFamily: {
-        customFont: ['"telkomsel"', "Telkomsel Batik Sans Bold"],
-        // Add more custom font families as needed
-      },
     },
   },
   plugins: [],

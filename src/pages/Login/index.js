@@ -179,13 +179,6 @@ const Login = ({navigation}) => {
                 }}
                 password={true}
               />
-              {/* <Password
-                placeholder="Kata Sandi"
-                value={password}
-                onChangeText={handlePasswordChange}
-                error={passwordError}
-                showIcon={showIcon}
-              /> */}
               <Gap height={10} />
               <View className="flex-row justify-between items-center">
                 <View className="flex flex-row items-center">
@@ -198,7 +191,6 @@ const Login = ({navigation}) => {
                   />
                   <Text>Remember me</Text> */}
                 </View>
-
                 <Link
                   color={'#3E86FA'}
                   title="Lupa Kata Sandi"

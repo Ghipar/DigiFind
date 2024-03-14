@@ -4,6 +4,7 @@ import {Input, Link, Button, Gap, Password} from '../../components';
 import {ScrollView} from 'react-native-gesture-handler';
 import {AuthContext} from '../../components/context/AuthContext';
 import Spinner from 'react-native-loading-spinner-overlay';
+import {Coba, ILlogo, icNIK} from '../../assets';
 import LinearGradient from 'react-native-linear-gradient';
 
 const Register = ({navigation}) => {

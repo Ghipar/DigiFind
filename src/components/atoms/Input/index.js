@@ -45,7 +45,7 @@ const Input = ({
   return (
     // <View   className="border-2 rounded-md border-gray-300 border-current px-4" >
     <View>
-      <View className="flex-row items-center bg-white shadow-2xl rounded-3xl px-4 mt-2">
+      <View className="flex-row items-center bg-white shadow-2xl rounded-3xl px-4">
         <Text className="text-base mb-1 font-semibold text-black">{label}</Text>
         <Icon />
         <TextInput

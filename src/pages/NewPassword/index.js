@@ -15,9 +15,6 @@ const NewPassword = ({navigation}) => {
   const [errors, setErrors] = React.useState({});
   const {ressPass} = useContext(AuthContext);
 
-  // const isButtonDisabled =
-  //   !password || !confirmPassword || !!passwordError || !!confirmPasswordError;
-
   const handleOnChange = (text, input) => {
     switch (input) {
       case 'password':
